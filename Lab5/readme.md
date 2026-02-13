@@ -17,6 +17,6 @@ Implemented a home security system with:
 - Command line menu interface
 
 ### Threshold Value
-Experimentally determined threshold: [你的阈值]
+Experimentally determined threshold: [20000000]
 - Based on testing with different lighting conditions
 - Balances sensitivity vs. false positives
