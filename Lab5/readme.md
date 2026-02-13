@@ -1,22 +1,26 @@
-# Lab 5 - Computer Vision Mini Project
+# Lab 5: Web Streaming and Computer Vision
 
-## Web Streaming (Section 3.4)
-Unable to access the web streaming interface despite multiple troubleshooting attempts:
-- Successfully installed simplejpeg dependency
-- Confirmed server is listening on port 8000
-- Tested both localhost and IP address
-- No firewall blocking
+## Files
 
-The mjpeg_server.py script has been modified and is included.
+### Web Streaming
+- [webstreaming.py](./webstreaming.py) - Real-time video streaming from camera
+- [lab5-web-stream.png](./lab5-web-stream.png) - Web streaming screenshot
 
-## Mini Project (Section 4.4)
-Implemented a home security system with:
-- Background image capture with countdown
-- Person detection using background subtraction
-- SenseHAT LED alarm
-- Command line menu interface
+### Mini Project
+- [mini-project/main_rpi.py](./mini-project/main_rpi.py) - Main application
+- [mini-project/helper_functions/](./mini-project/helper_functions/) - Helper modules
+  - `camera.py`
+  - `computer_vision.py`
+  - `__init__.py`
+- [lab5-miniproject.png](./lab5-miniproject.png) - Mini project screenshot
 
-### Threshold Value
-Experimentally determined threshold: [20000000]
-- Based on testing with different lighting conditions
-- Balances sensitivity vs. false positives
+## How to Run
+
+```bash
+python3 webstreaming.py
+python3 mini-project/main_rpi.py
+```
+
+## Note
+
+Large image data is excluded from GitHub (see .gitignore).
