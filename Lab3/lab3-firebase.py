@@ -16,7 +16,6 @@ db = firebase.database()
 username = "annanjiang"
 sense = SenseHat()
 
-# 写 10 组数据
 for _ in range(10):
     ts = str(int(time.time()))
 
@@ -39,9 +38,7 @@ def print_last3(user):
         for item in last3:
             print(f"  {item.key()} : {item.val()}")
 
-# 先打印你自己的最近3条（确认写入成功）
 print_last3("annanjiang")
 
-# 再打印队友的：把下面名字改成你队友的 username
-print_last3("A")
-# print_last3("teammate2")
+print_last3("John")
+

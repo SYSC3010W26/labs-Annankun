@@ -12,5 +12,4 @@ def hello():
     return render_template("hello.html", name=name)
 
 if __name__ == "__main__":
-    # host=0.0.0.0 让同一网络里的其他设备也能访问
     app.run(host="0.0.0.0", port=5000, debug=True)
